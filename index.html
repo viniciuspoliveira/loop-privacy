@@ -1,250 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade – Loop</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-      color: #333;
-      background: #f9fafb;
-      padding: 2rem 1rem;
-    }
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 12px;
-      padding: 2.5rem 2rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 1.8rem;
-      color: #1F345F;
-      margin-bottom: 0.25rem;
-    }
-    .subtitle {
-      color: #666;
-      font-size: 0.95rem;
-      margin-bottom: 2rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-      color: #1F345F;
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p, li {
-      font-size: 0.95rem;
-      color: #444;
-    }
-    ul {
-      padding-left: 1.5rem;
-      margin: 0.5rem 0;
-    }
-    li { margin-bottom: 0.3rem; }
-    .lang-switch {
-      text-align: right;
-      margin-bottom: 1rem;
-    }
-    .lang-switch button {
-      background: none;
-      border: 1px solid #1F345F;
-      color: #1F345F;
-      padding: 0.3rem 0.8rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.85rem;
-      margin-left: 0.5rem;
-    }
-    .lang-switch button.active {
-      background: #1F345F;
-      color: #fff;
-    }
-    .section { display: none; }
-    .section.active { display: block; }
-    footer {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #999;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="lang-switch">
-      <button id="btn-pt" class="active" onclick="switchLang('pt')">Português</button>
-      <button id="btn-en" onclick="switchLang('en')">English</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade – Loop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 1.7;
+        color: #333;
+        background: #f9fafb;
+        padding: 2rem 1rem;
+      }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 12px;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        font-size: 1.8rem;
+        color: #1f345f;
+        margin-bottom: 0.25rem;
+      }
+      .subtitle {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+        color: #1f345f;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      p,
+      li {
+        font-size: 0.95rem;
+        color: #444;
+      }
+      ul {
+        padding-left: 1.5rem;
+        margin: 0.5rem 0;
+      }
+      li {
+        margin-bottom: 0.3rem;
+      }
+      .lang-switch {
+        text-align: right;
+        margin-bottom: 1rem;
+      }
+      .lang-switch button {
+        background: none;
+        border: 1px solid #1f345f;
+        color: #1f345f;
+        padding: 0.3rem 0.8rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.85rem;
+        margin-left: 0.5rem;
+      }
+      .lang-switch button.active {
+        background: #1f345f;
+        color: #fff;
+      }
+      .section {
+        display: none;
+      }
+      .section.active {
+        display: block;
+      }
+      footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="lang-switch">
+        <button id="btn-pt" class="active" onclick="switchLang('pt')">
+          Português
+        </button>
+        <button id="btn-en" onclick="switchLang('en')">English</button>
+      </div>
+
+      <!-- PORTUGUÊS -->
+      <div id="pt" class="section active">
+        <h1>Política de Privacidade</h1>
+        <p class="subtitle">Última atualização: 3 de fevereiro de 2025</p>
+
+        <p>
+          O <strong>Loop – Infinite Loop: Hábitos Diários</strong> ("Loop",
+          "nós") valoriza a sua privacidade. Esta política descreve quais dados
+          coletamos, como os utilizamos e quais são os seus direitos.
+        </p>
+
+        <h2>1. Dados que coletamos</h2>
+
+        <p><strong>Dados de conta</strong></p>
+        <ul>
+          <li>
+            Nome, endereço de e-mail e identificador de usuário fornecidos pelo
+            Google Sign-In ou Apple Sign-In.
+          </li>
+          <li>
+            Foto de perfil, caso você escolha tirar ou selecionar uma imagem.
+          </li>
+        </ul>
+
+        <p><strong>Dados de uso do app</strong></p>
+        <ul>
+          <li>
+            Hábitos/atividades criados por você (nome, ícone, cor, frequência).
+          </li>
+          <li>
+            Registros de check-in (datas em que você marcou uma atividade como
+            concluída).
+          </li>
+          <li>Preferências (idioma, tema claro/escuro).</li>
+          <li>
+            Configurações de notificações (horários e atividades selecionadas).
+          </li>
+        </ul>
+
+        <p><strong>Dados de análise</strong></p>
+        <ul>
+          <li>
+            Eventos de uso anônimos via Firebase Analytics (por exemplo: telas
+            visitadas, hábitos criados/concluídos, tema alterado).
+          </li>
+        </ul>
+
+        <p><strong>Dados de compra</strong></p>
+        <ul>
+          <li>
+            Status da assinatura Pro gerenciado pelo RevenueCat. Não armazenamos
+            dados de pagamento — eles são processados pela Apple App Store ou
+            Google Play Store.
+          </li>
+        </ul>
+
+        <h2>2. Como usamos seus dados</h2>
+        <ul>
+          <li>
+            Sincronizar seus hábitos e check-ins entre dispositivos via Firebase
+            Cloud Firestore.
+          </li>
+          <li>Armazenar sua foto de perfil no Firebase Cloud Storage.</li>
+          <li>Enviar notificações locais de lembrete dos seus hábitos.</li>
+          <li>
+            Analisar o uso do app de forma agregada para melhorar a experiência.
+          </li>
+          <li>
+            Exibir anúncios não personalizados via Google AdMob (apenas para
+            usuários não-Pro).
+          </li>
+          <li>Gerenciar seu status de assinatura Pro.</li>
+        </ul>
+
+        <h2>3. Compartilhamento de dados</h2>
+        <p>
+          Não vendemos seus dados pessoais. Compartilhamos dados apenas com os
+          seguintes provedores de serviço, estritamente para o funcionamento do
+          app:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Firebase</strong> — autenticação, banco de dados,
+            armazenamento de arquivos e análise.
+          </li>
+          <li>
+            <strong>Google AdMob</strong> — exibição de anúncios (não
+            personalizados).
+          </li>
+          <li><strong>RevenueCat</strong> — gerenciamento de assinaturas.</li>
+          <li>
+            <strong>Apple / Google</strong> — processamento de pagamentos via
+            lojas de aplicativos.
+          </li>
+        </ul>
+
+        <h2>4. Armazenamento e segurança</h2>
+        <p>
+          Seus dados são armazenados localmente no dispositivo (AsyncStorage) e
+          sincronizados com o Firebase Cloud Firestore, que utiliza criptografia
+          em trânsito e em repouso. Fotos de perfil são armazenadas no Firebase
+          Cloud Storage.
+        </p>
+
+        <h2>5. Seus direitos</h2>
+        <ul>
+          <li>
+            <strong>Acesso e portabilidade</strong>: Todos os seus dados de
+            hábitos e check-ins estão visíveis diretamente no app.
+          </li>
+          <li>
+            <strong>Exclusão</strong>: Você pode excluir sua conta e todos os
+            dados associados entrando em contato conosco pelo e-mail abaixo.
+          </li>
+          <li>
+            <strong>Modo convidado</strong>: Você pode usar o app sem criar
+            conta. Nesse caso, os dados ficam apenas no seu dispositivo.
+          </li>
+        </ul>
+
+        <h2>6. Dados que NÃO coletamos</h2>
+        <p>
+          O Loop <strong>não</strong> coleta: localização/GPS, contatos,
+          calendário, histórico de navegação, dados de outros apps.
+        </p>
+
+        <h2>7. Crianças</h2>
+        <p>
+          O Loop não é direcionado a crianças menores de 13 anos. Não coletamos
+          intencionalmente dados de crianças.
+        </p>
+
+        <h2>8. Alterações nesta política</h2>
+        <p>
+          Podemos atualizar esta política periodicamente. A data de "última
+          atualização" no topo será alterada. Recomendamos que você revise esta
+          página ocasionalmente.
+        </p>
+
+        <h2>9. Contato</h2>
+        <p>
+          Em caso de dúvidas sobre esta política ou para solicitar exclusão de
+          dados, entre em contato:
+        </p>
+        <p><strong>E-mail:</strong> viniciusp.penha.loop@gmail.com/p></p>
+      </div>
+
+      <!-- ENGLISH -->
+      <div id="en" class="section">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Last updated: February 3, 2025</p>
+
+        <p>
+          <strong>Loop – Infinite Loop: Daily Habits</strong> ("Loop", "we")
+          values your privacy. This policy describes what data we collect, how
+          we use it, and your rights.
+        </p>
+
+        <h2>1. Data we collect</h2>
+
+        <p><strong>Account data</strong></p>
+        <ul>
+          <li>
+            Name, email address, and user identifier provided by Google Sign-In
+            or Apple Sign-In.
+          </li>
+          <li>Profile photo, if you choose to take or select one.</li>
+        </ul>
+
+        <p><strong>App usage data</strong></p>
+        <ul>
+          <li>Habits/activities you create (name, icon, color, frequency).</li>
+          <li>
+            Check-in records (dates on which you marked an activity as
+            completed).
+          </li>
+          <li>Preferences (language, light/dark theme).</li>
+          <li>Notification settings (times and selected activities).</li>
+        </ul>
+
+        <p><strong>Analytics data</strong></p>
+        <ul>
+          <li>
+            Anonymous usage events via Firebase Analytics (e.g., screens
+            visited, habits created/completed, theme changed).
+          </li>
+        </ul>
+
+        <p><strong>Purchase data</strong></p>
+        <ul>
+          <li>
+            Pro subscription status managed by RevenueCat. We do not store
+            payment data — it is processed by the Apple App Store or Google Play
+            Store.
+          </li>
+        </ul>
+
+        <h2>2. How we use your data</h2>
+        <ul>
+          <li>
+            Sync your habits and check-ins across devices via Firebase Cloud
+            Firestore.
+          </li>
+          <li>Store your profile photo in Firebase Cloud Storage.</li>
+          <li>Send local reminder notifications for your habits.</li>
+          <li>Analyze app usage in aggregate to improve the experience.</li>
+          <li>
+            Display non-personalized ads via Google AdMob (non-Pro users only).
+          </li>
+          <li>Manage your Pro subscription status.</li>
+        </ul>
+
+        <h2>3. Data sharing</h2>
+        <p>
+          We do not sell your personal data. We share data only with the
+          following service providers, strictly for app functionality:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Firebase</strong> — authentication, database, file
+            storage, and analytics.
+          </li>
+          <li>
+            <strong>Google AdMob</strong> — ad display (non-personalized).
+          </li>
+          <li><strong>RevenueCat</strong> — subscription management.</li>
+          <li>
+            <strong>Apple / Google</strong> — payment processing via app stores.
+          </li>
+        </ul>
+
+        <h2>4. Storage and security</h2>
+        <p>
+          Your data is stored locally on your device (AsyncStorage) and synced
+          with Firebase Cloud Firestore, which uses encryption in transit and at
+          rest. Profile photos are stored in Firebase Cloud Storage.
+        </p>
+
+        <h2>5. Your rights</h2>
+        <ul>
+          <li>
+            <strong>Access and portability</strong>: All your habit and check-in
+            data is visible directly in the app.
+          </li>
+          <li>
+            <strong>Deletion</strong>: You can delete your account and all
+            associated data by contacting us at the email below.
+          </li>
+          <li>
+            <strong>Guest mode</strong>: You can use the app without creating an
+            account. In this case, data stays on your device only.
+          </li>
+        </ul>
+
+        <h2>6. Data we do NOT collect</h2>
+        <p>
+          Loop does <strong>not</strong> collect: location/GPS, contacts,
+          calendar, browsing history, or data from other apps.
+        </p>
+
+        <h2>7. Children</h2>
+        <p>
+          Loop is not directed at children under 13. We do not intentionally
+          collect data from children.
+        </p>
+
+        <h2>8. Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time. The "last updated" date
+          at the top will change. We recommend you review this page
+          occasionally.
+        </p>
+
+        <h2>9. Contact</h2>
+        <p>
+          If you have questions about this policy or wish to request data
+          deletion, please contact:
+        </p>
+        <p><strong>Email:</strong> viniciusp.dev@gmail.com</p>
+      </div>
+
+      <footer>
+        &copy; 2025 Loop. Todos os direitos reservados / All rights reserved.
+      </footer>
     </div>
 
-    <!-- PORTUGUÊS -->
-    <div id="pt" class="section active">
-      <h1>Política de Privacidade</h1>
-      <p class="subtitle">Última atualização: 3 de fevereiro de 2025</p>
-
-      <p>O <strong>Loop – Infinite Loop: Hábitos Diários</strong> ("Loop", "nós") valoriza a sua privacidade. Esta política descreve quais dados coletamos, como os utilizamos e quais são os seus direitos.</p>
-
-      <h2>1. Dados que coletamos</h2>
-
-      <p><strong>Dados de conta</strong></p>
-      <ul>
-        <li>Nome, endereço de e-mail e identificador de usuário fornecidos pelo Google Sign-In ou Apple Sign-In.</li>
-        <li>Foto de perfil, caso você escolha tirar ou selecionar uma imagem.</li>
-      </ul>
-
-      <p><strong>Dados de uso do app</strong></p>
-      <ul>
-        <li>Hábitos/atividades criados por você (nome, ícone, cor, frequência).</li>
-        <li>Registros de check-in (datas em que você marcou uma atividade como concluída).</li>
-        <li>Preferências (idioma, tema claro/escuro).</li>
-        <li>Configurações de notificações (horários e atividades selecionadas).</li>
-      </ul>
-
-      <p><strong>Dados de análise</strong></p>
-      <ul>
-        <li>Eventos de uso anônimos via Firebase Analytics (por exemplo: telas visitadas, hábitos criados/concluídos, tema alterado).</li>
-      </ul>
-
-      <p><strong>Dados de compra</strong></p>
-      <ul>
-        <li>Status da assinatura Pro gerenciado pelo RevenueCat. Não armazenamos dados de pagamento — eles são processados pela Apple App Store ou Google Play Store.</li>
-      </ul>
-
-      <h2>2. Como usamos seus dados</h2>
-      <ul>
-        <li>Sincronizar seus hábitos e check-ins entre dispositivos via Firebase Cloud Firestore.</li>
-        <li>Armazenar sua foto de perfil no Firebase Cloud Storage.</li>
-        <li>Enviar notificações locais de lembrete dos seus hábitos.</li>
-        <li>Analisar o uso do app de forma agregada para melhorar a experiência.</li>
-        <li>Exibir anúncios não personalizados via Google AdMob (apenas para usuários não-Pro).</li>
-        <li>Gerenciar seu status de assinatura Pro.</li>
-      </ul>
-
-      <h2>3. Compartilhamento de dados</h2>
-      <p>Não vendemos seus dados pessoais. Compartilhamos dados apenas com os seguintes provedores de serviço, estritamente para o funcionamento do app:</p>
-      <ul>
-        <li><strong>Google Firebase</strong> — autenticação, banco de dados, armazenamento de arquivos e análise.</li>
-        <li><strong>Google AdMob</strong> — exibição de anúncios (não personalizados).</li>
-        <li><strong>RevenueCat</strong> — gerenciamento de assinaturas.</li>
-        <li><strong>Apple / Google</strong> — processamento de pagamentos via lojas de aplicativos.</li>
-      </ul>
-
-      <h2>4. Armazenamento e segurança</h2>
-      <p>Seus dados são armazenados localmente no dispositivo (AsyncStorage) e sincronizados com o Firebase Cloud Firestore, que utiliza criptografia em trânsito e em repouso. Fotos de perfil são armazenadas no Firebase Cloud Storage.</p>
-
-      <h2>5. Seus direitos</h2>
-      <ul>
-        <li><strong>Acesso e portabilidade</strong>: Todos os seus dados de hábitos e check-ins estão visíveis diretamente no app.</li>
-        <li><strong>Exclusão</strong>: Você pode excluir sua conta e todos os dados associados entrando em contato conosco pelo e-mail abaixo.</li>
-        <li><strong>Modo convidado</strong>: Você pode usar o app sem criar conta. Nesse caso, os dados ficam apenas no seu dispositivo.</li>
-      </ul>
-
-      <h2>6. Dados que NÃO coletamos</h2>
-      <p>O Loop <strong>não</strong> coleta: localização/GPS, contatos, calendário, histórico de navegação, dados de outros apps.</p>
-
-      <h2>7. Crianças</h2>
-      <p>O Loop não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente dados de crianças.</p>
-
-      <h2>8. Alterações nesta política</h2>
-      <p>Podemos atualizar esta política periodicamente. A data de "última atualização" no topo será alterada. Recomendamos que você revise esta página ocasionalmente.</p>
-
-      <h2>9. Contato</h2>
-      <p>Em caso de dúvidas sobre esta política ou para solicitar exclusão de dados, entre em contato:</p>
-      <p><strong>E-mail:</strong> viniciusp.dev@gmail.com</p>
-    </div>
-
-    <!-- ENGLISH -->
-    <div id="en" class="section">
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">Last updated: February 3, 2025</p>
-
-      <p><strong>Loop – Infinite Loop: Daily Habits</strong> ("Loop", "we") values your privacy. This policy describes what data we collect, how we use it, and your rights.</p>
-
-      <h2>1. Data we collect</h2>
-
-      <p><strong>Account data</strong></p>
-      <ul>
-        <li>Name, email address, and user identifier provided by Google Sign-In or Apple Sign-In.</li>
-        <li>Profile photo, if you choose to take or select one.</li>
-      </ul>
-
-      <p><strong>App usage data</strong></p>
-      <ul>
-        <li>Habits/activities you create (name, icon, color, frequency).</li>
-        <li>Check-in records (dates on which you marked an activity as completed).</li>
-        <li>Preferences (language, light/dark theme).</li>
-        <li>Notification settings (times and selected activities).</li>
-      </ul>
-
-      <p><strong>Analytics data</strong></p>
-      <ul>
-        <li>Anonymous usage events via Firebase Analytics (e.g., screens visited, habits created/completed, theme changed).</li>
-      </ul>
-
-      <p><strong>Purchase data</strong></p>
-      <ul>
-        <li>Pro subscription status managed by RevenueCat. We do not store payment data — it is processed by the Apple App Store or Google Play Store.</li>
-      </ul>
-
-      <h2>2. How we use your data</h2>
-      <ul>
-        <li>Sync your habits and check-ins across devices via Firebase Cloud Firestore.</li>
-        <li>Store your profile photo in Firebase Cloud Storage.</li>
-        <li>Send local reminder notifications for your habits.</li>
-        <li>Analyze app usage in aggregate to improve the experience.</li>
-        <li>Display non-personalized ads via Google AdMob (non-Pro users only).</li>
-        <li>Manage your Pro subscription status.</li>
-      </ul>
-
-      <h2>3. Data sharing</h2>
-      <p>We do not sell your personal data. We share data only with the following service providers, strictly for app functionality:</p>
-      <ul>
-        <li><strong>Google Firebase</strong> — authentication, database, file storage, and analytics.</li>
-        <li><strong>Google AdMob</strong> — ad display (non-personalized).</li>
-        <li><strong>RevenueCat</strong> — subscription management.</li>
-        <li><strong>Apple / Google</strong> — payment processing via app stores.</li>
-      </ul>
-
-      <h2>4. Storage and security</h2>
-      <p>Your data is stored locally on your device (AsyncStorage) and synced with Firebase Cloud Firestore, which uses encryption in transit and at rest. Profile photos are stored in Firebase Cloud Storage.</p>
-
-      <h2>5. Your rights</h2>
-      <ul>
-        <li><strong>Access and portability</strong>: All your habit and check-in data is visible directly in the app.</li>
-        <li><strong>Deletion</strong>: You can delete your account and all associated data by contacting us at the email below.</li>
-        <li><strong>Guest mode</strong>: You can use the app without creating an account. In this case, data stays on your device only.</li>
-      </ul>
-
-      <h2>6. Data we do NOT collect</h2>
-      <p>Loop does <strong>not</strong> collect: location/GPS, contacts, calendar, browsing history, or data from other apps.</p>
-
-      <h2>7. Children</h2>
-      <p>Loop is not directed at children under 13. We do not intentionally collect data from children.</p>
-
-      <h2>8. Changes to this policy</h2>
-      <p>We may update this policy from time to time. The "last updated" date at the top will change. We recommend you review this page occasionally.</p>
-
-      <h2>9. Contact</h2>
-      <p>If you have questions about this policy or wish to request data deletion, please contact:</p>
-      <p><strong>Email:</strong> viniciusp.dev@gmail.com</p>
-    </div>
-
-    <footer>
-      &copy; 2025 Loop. Todos os direitos reservados / All rights reserved.
-    </footer>
-  </div>
-
-  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-      document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
-      document.getElementById(lang).classList.add('active');
-      document.getElementById('btn-' + lang).classList.add('active');
-    }
-  </script>
-</body>
+    <script>
+      function switchLang(lang) {
+        document
+          .querySelectorAll(".section")
+          .forEach((s) => s.classList.remove("active"));
+        document
+          .querySelectorAll(".lang-switch button")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById(lang).classList.add("active");
+        document.getElementById("btn-" + lang).classList.add("active");
+      }
+    </script>
+  </body>
 </html>
